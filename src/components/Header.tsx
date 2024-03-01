@@ -5,13 +5,14 @@ import background from '../assets/home/page_bg_header.png'
 const Header = () => {
 
 
+    
     return (
         <div className={`relative h-[15vh] z-10 text-white`}>
             <div
                 className="container py-12 z-40  mx-auto flex justify-between items-center absolute top-0 left-0 right-0">
                 <nav id="nav">
                     <ul className={'flex gap-10 text-xl'}>
-                        <li><NavLink to={'/'} active>Главная</NavLink></li>
+                        <li><NavLink to={'/'}>Главная</NavLink></li>
                         <li><NavLink to={'/products'}>Продукация</NavLink></li>
                         <li><NavLink to={'/handbooks'}>Справочники и ГОСТы</NavLink></li>
                         <li><NavLink to={'/documents'}>Документы</NavLink></li>
