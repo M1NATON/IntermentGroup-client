@@ -1,12 +1,12 @@
 import Header from "../components/Header.tsx";
 
-const DocumentsPage = () => {
+const RequisitesPage = () => {
     return (
         <div>
             <Header/>
-            <h1>Documents</h1>
+            <h1>Requisites</h1>
         </div>
     );
 };
 
-export default DocumentsPage;
+export default RequisitesPage;

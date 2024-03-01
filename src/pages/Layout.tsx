@@ -1,11 +1,13 @@
 import {Outlet} from "react-router-dom";
+import Footer from "../components/Footer.tsx";
 
 const Layout = () => {
     return (
-        <div>
-            <div className={'container mx-auto'}>
+        <div className={'min-h-screen flex flex-col'}>
+            <div className={'flex-auto'}>
                 <Outlet/>
             </div>
+            <Footer/>
         </div>
     );
 };

@@ -1,12 +1,12 @@
 import Header from "../components/Header.tsx";
 
-const DocumentsPage = () => {
+const PaymentPage = () => {
     return (
         <div>
             <Header/>
-            <h1>Documents</h1>
+            <h1>Payment</h1>
         </div>
     );
 };
 
-export default DocumentsPage;
+export default PaymentPage;

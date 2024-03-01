@@ -1,8 +1,13 @@
+import HomeHeader from "../components/Home/HomeHeader.tsx";
+import HomeMain from "../components/Home/HomeMain.tsx";
+import HomeFooter from "../components/Home/HomeFooter.tsx";
 
 const HomePage = () => {
     return (
-        <div className={'text-2xl'}>
-            привет
+        <div>
+            <HomeHeader/>
+            <HomeMain/>
+            <HomeFooter/>
         </div>
     );
 };
