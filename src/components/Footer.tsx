@@ -3,7 +3,7 @@ import {NavLink} from "react-router-dom";
 import mainLogo from '../assets/home/main_logo.svg'
 const Footer = () => {
     return (
-        <div className={'relative h-[40vh] text-white'}>
+        <div className={'relative  text-white z-10'}>
             <img src={backFooter} alt="" className={' -z-50 absolute left-0 top-0 right-0 h-full'}/>
             <div className={'-z-40 absolute opacity-[0.65] left-0 top-0 right-0 bottom-0 h-full  bg-[#1A2A42]'}></div>
 
