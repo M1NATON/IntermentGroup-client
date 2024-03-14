@@ -1,13 +1,14 @@
 import {NavLink} from "react-router-dom";
 import background from '../assets/home/page_bg_header.png'
+import {useAppSelector} from "../hooks/redux.ts";
 
 
 const Header = () => {
 
+    const {isAuth} = useAppSelector(state => state.user)
 
-    
     return (
-        <div className={`relative h-[15vh] z-10 text-white`}>
+        <div className={`relative h-[12vh] z-10 text-white`}>
             <div
                 className="container py-12 z-40  mx-auto flex justify-between items-center absolute top-0 left-0 right-0">
                 <nav id="nav">
@@ -21,8 +22,10 @@ const Header = () => {
                     </ul>
                 </nav>
                 <div className={'text-2xl'}>
-                    <p>+7 (499) 286-0-286</p>
-                    <p>INFO@IMGMET.RU</p>
+                    {
+                        isAuth ? <NavLink to={'/profile'}>Профиль</NavLink> :  <NavLink to={'/authorization'}>Авторизоваться</NavLink>
+                    }
+
                 </div>
             </div>
 

@@ -7,6 +7,8 @@ import HandbooksPage from "../pages/HandbooksPage.tsx";
 import PaymentPage from "../pages/PaymentPage.tsx";
 import RequisitesPage from "../pages/RequisitesPage.tsx";
 import ProductsPage from "../pages/ProductsPage.tsx";
+import ProfilePage from "../pages/ProfilePage.tsx";
+import AuthorizationPage from "../pages/AuthorizationPage.tsx";
 
 
 export const router = createBrowserRouter([
@@ -38,6 +40,14 @@ export const router = createBrowserRouter([
             {
                 path: 'requisites',
                 element: <RequisitesPage/>
+            },
+            {
+                path: 'profile',
+                element: <ProfilePage/>
+            },
+            {
+                path: 'authorization',
+                element: <AuthorizationPage/>
             }
         ]
     }

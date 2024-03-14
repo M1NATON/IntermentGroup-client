@@ -3,6 +3,7 @@ import HomeMain from "../components/Home/HomeMain.tsx";
 import HomeFooter from "../components/Home/HomeFooter.tsx";
 
 const HomePage = () => {
+
     return (
         <div>
             <HomeHeader/>

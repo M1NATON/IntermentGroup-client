@@ -1,9 +1,14 @@
 import video from '../../assets/home/header_fhd.mp4'
 import mainLogo from '../../assets/home/main_logo.svg'
 import {NavLink} from "react-router-dom";
+import {useAppSelector} from "../../hooks/redux.ts";
 const HomeHeader = () => {
+
+    const {isAuth} = useAppSelector(state => state.user)
+
+
     return (
-        <div className={'h-[100vh] w-full overflow-hidden relative z-10 text-white'}>
+        <div className={'h-screen w-full overflow-hidden relative z-10 text-white'}>
             <div
                 className="container py-12 z-40  mx-auto flex justify-between items-center absolute top-0 left-0 right-0">
                 <nav id="nav">
@@ -17,13 +22,14 @@ const HomeHeader = () => {
                     </ul>
                 </nav>
                 <div className={'text-2xl'}>
-                    <p>+7 (499) 286-0-286</p>
-                    <p>INFO@IMGMET.RU</p>
+                    {
+                        isAuth ? <NavLink to={'/profile'}>Профиль</NavLink> :  <NavLink to={'/authorization'}>Авторизоваться</NavLink>
+                    }
                 </div>
             </div>
 
-            <div className={'-z-10 opacity-[0.65] bg-[#1A2A42] absolute left-0 top-0 right-0 bottom-0'}></div>
-            <div className={'text-white flex gap-20 items-center w-[40%] mx-auto mt-[20%]'}>
+            <div className={'-z-10 opacity-[0.65]  bg-[#1A2A42] absolute left-0 top-0 right-0 bottom-0'}></div>
+            <div className={'text-white flex gap-20 items-center w-[40%] mx-auto mt-[20%] mb-[150px]'}>
                 <img src={mainLogo} alt=""/>
                 <div>
                     <h1 className={'text-[73px] font-[700] leading-[80px]'}>Все виды

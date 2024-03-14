@@ -19,7 +19,7 @@ const HandbooksPage = () => {
 
                     <h1 className={'text-textColor text-5xl font-bold pt-20 mb-10'}>Справочники и госты</h1>
 
-                    <div className={'flex justify-between pb-[400px]'}>
+                    <div className={'flex justify-between pb-[700px]'}>
 
 
                         <div className={'w-[30%]'}>

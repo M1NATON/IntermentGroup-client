@@ -9,11 +9,32 @@
         box-sizing: border-box;
     }
 
-    {
-
+    td td:hover{
+        background: #fff;
     }
 
 }
 #nav a.active {
     color: #a6a6a6;
+}
+input{
+    outline: none;
+    margin-bottom: 15px;
+}
+
+tr{
+    border: 1px solid #1A2A42;
+    margin-bottom: 20px;
+    transition: .2s;
+}
+td{
+    padding: 10px;
+}
+
+table{
+    border-spacing: 10px;
+}
+
+tr:hover{
+    background: #dadada;
 }
